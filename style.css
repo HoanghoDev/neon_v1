@@ -562,3 +562,48 @@ body::before{
     opacity: 0.3;
 
 }
+@media only screen and (max-width: 768px) {
+ .container{
+    max-width: 80%;
+ }
+ .header ul{
+    display: none;
+ }
+ .list_img{
+    width:100%;
+ }
+ .list_img .item{
+    width:100%;
+ }
+ .list_img .item img{
+    width:100%;
+ }
+ @keyframes img_item_active{
+    0%{
+          opacity: 0;
+        width:100%;
+    }
+    1%{
+        opacity: 1;
+    }
+   100%{
+    opacity: 1;
+     width:100%;
+    }
+}
+.wall-left{
+    display: none;
+}
+.wall-right{
+    display: none;
+}
+.hand1, .hand2{
+    display: none;
+}
+.content .item{
+    transform: perspective(290px) rotate(0) rotateY(0);
+    left:0;
+    top:50%;
+ }
+
+}
